@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="WindowsUniversalApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsUniversalApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="30"></Setter>
+            <Setter Property="MinWidth" Value="300"></Setter>
+            <Setter Property="Padding" Value="20,10"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel Margin="0,50,0,0">
+
+            <TextBlock FontSize="20" Margin="30,30,0,0">
+                Click 'Start Worker' and then 'Jolt Worker' to reproduce this scenario.<LineBreak />
+                However, for a Universal App for Windows, the issue cannot be reproduced, <LineBreak />
+                CancellationTokenSource.Cancel() behaves as one would expect.
+            </TextBlock>
+            
+            <Button Content="Start Worker" Click="OnStartWorkerClick" />
+            <Button Content="Jolt Worker" Click="OnJoltWorkerClick" />
+            <Button Content="Stop Worker" Click="OnStopWorkerClick" />
+
+        </StackPanel>
+    </Grid>
+</Page>

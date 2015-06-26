@@ -1,0 +1,126 @@
+'WindowsUniversalApp.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'E:\Sources\GitHub\Samples\Workspace_1\Sources\AsyncIssue\WindowsUniversalApp\bin\Debug\AppX\WindowsUniversalApp.exe'. Symbols loaded.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\system32\WinMetadata\Windows.UI.Xaml.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices.WindowsRuntime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.WindowsRuntime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\system32\WinMetadata\Windows.ApplicationModel.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Debug\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Debug.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\system32\WinMetadata\Windows.Globalization.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Collections\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Collections.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading.Tasks\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.Tasks.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.WindowsRuntime\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.WindowsRuntime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\system32\WinMetadata\Windows.Foundation.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Extensions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The worker loop is starting. SynchronizationContext == null: True
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+The thread 0x1cac has exited with code 259 (0x103).
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+OnJoltWorkerClick is about to call myWorker.Jolt(). Thread ID: 3
+The current worker loop is being cancelled. We are just about to call cancellationTokenSource.Cancel(). Thread: 3
+'WindowsUniversalApp.exe' (CLR v4.0.30319: Immersive Application Domain): Loaded 'C:\Windows\system32\WinMetadata\Windows.UI.winmd'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The current worker loop was cancelled. Thread: 3
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 5
+Doing some actual work. Thread: 5
+Loop step 4. Ending the loop. Thread: 5
+=========================================================
+Loop step 1. Starting the loop. Thread: 5
+Loop step 2. Before Task.Delay. Thread: 5
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+The thread 0xbf0 has exited with code 259 (0x103).
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+OnJoltWorkerClick is about to call myWorker.Jolt(). Thread ID: 3
+The current worker loop is being cancelled. We are just about to call cancellationTokenSource.Cancel(). Thread: 3
+The current worker loop was cancelled. Thread: 3
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 7
+Doing some actual work. Thread: 7
+Loop step 4. Ending the loop. Thread: 7
+=========================================================
+Loop step 1. Starting the loop. Thread: 7
+Loop step 2. Before Task.Delay. Thread: 7
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+The thread 0x1724 has exited with code 259 (0x103).
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4
+=========================================================
+Loop step 1. Starting the loop. Thread: 4
+Loop step 2. Before Task.Delay. Thread: 4
+Loop step 3. After Task.Delay. Thread: 4
+Doing some actual work. Thread: 4
+Loop step 4. Ending the loop. Thread: 4

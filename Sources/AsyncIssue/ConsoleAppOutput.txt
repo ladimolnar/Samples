@@ -1,0 +1,85 @@
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'E:\Sources\GitHub\Samples\Workspace_1\Sources\AsyncIssue\ConsoleApp\bin\Debug\ConsoleApp.vshost.exe'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x2330 has exited with code 259 (0x103).
+The thread 0x2644 has exited with code 259 (0x103).
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'E:\Sources\GitHub\Samples\Workspace_1\Sources\AsyncIssue\ConsoleApp\bin\Debug\ConsoleApp.exe'. Symbols loaded.
+'ConsoleApp.vshost.exe' (CLR v4.0.30319: ConsoleApp.vshost.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The worker loop is starting. SynchronizationContext == null: True
+=========================================================
+Loop step 1. Starting the loop. Thread: 11
+FooAsync starting. Before calling Task.Delay. Thread ID: 6
+Loop step 2. Before Task.Delay. Thread: 11
+FooAsync is about to call myWorker.Jolt(). Thread ID: 6
+The current worker loop is being cancelled. We are just about to call cancellationTokenSource.Cancel(). Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
+=========================================================
+Loop step 1. Starting the loop. Thread: 6
+Loop step 2. Before Task.Delay. Thread: 6
+A first chance exception of type 'System.Threading.Tasks.TaskCanceledException' occurred in mscorlib.dll
+Wait interrupted. Thread: 6
+Doing some actual work. Thread: 6
+Loop step 4. Ending the loop. Thread: 6
