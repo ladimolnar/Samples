@@ -25,7 +25,11 @@
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <StackPanel >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" >
                     <HyperlinkButton Content="Go to Page 1" Command="{Binding GoToPage1Command}" />
                     <HyperlinkButton Content="Go to Page 2" Command="{Binding GoToPage2Command}" />
                     <Button 
@@ -33,30 +37,31 @@
                         Command="{Binding ForceGarbageCollectionCommand}"
                         FontSize="20"
                         Margin="0,20" Padding="10,5" />
-
-                    <ScrollViewer Margin="0,0,10,0" VerticalScrollBarVisibility="Auto">
-                        <TextBlock TextWrapping="WrapWholeWords" Margin="0,0,20,0">
-                            <Bold>Weak Events are Dangerous!</Bold> <LineBreak/><LineBreak/>
-                            <Span>This application demonstrates how events based on weak references can cause unexpected results.</Span><LineBreak/>
-                            <Span>As an implementation for the weak event pattern we use a messaging plug-in for MvvMCross.</Span><LineBreak/><LineBreak/>
-                            <Bold>Page</Bold> 1 will subscribe to and unsubscribe from a timer message.<LineBreak/><LineBreak/>
-                            <Bold>Page 2</Bold> will subscribe to the timer message but will not explicitly unsubscribe from it. It will rely relying on the weak event
-                            ability to allow subscribers to be garbage collected even if they did not unsubscribed.
-                            This illustrates the advantages of using weak events in that they prevent memory leaks that would occur if classic events were used. 
-                            However, another aspect of this process illustrates the dangers of using weak events. The subscriber will continue to be invoked
-                            each time the event is raised (more precisely when the message is published) even if the subscriber got 
-                            in a garbage collectable state (a.k.a zombie state).<LineBreak/><LineBreak/>
-                            <Span>To demonstrate, go to Page 2, wait a few seconds and then return to the main page. At this point Page 2 will 
-                            be garbage collectable and yet will continue to handle the timer message. Going to Page 2 and returning again
-                            will add another zombie instance of type Page2View into this process. 
-                            You can show that these instances of type Page2View are indeed garbage collectable by clicking the "Force a garbage collection" button. 
-                            After the garbage collection runs, you will no longer see Page2View instances handling the timer message. 
-                            That happens because the garbage collectable instances of type Page2View are garbage collected.</Span><LineBreak/><LineBreak/>
-                            <Span>Note: In the case of a garbage collectable subscriber, the weak event 
-                            implementation will resurrect it, invoke it and then let it become garbage collectable again.</Span>
-                        </TextBlock>
-                    </ScrollViewer>
                 </StackPanel>
+
+                <ScrollViewer Grid.Row="1" Margin="0,0,10,0" VerticalScrollBarVisibility="Auto">
+                    <TextBlock TextWrapping="WrapWholeWords" Margin="0,0,20,0">
+                        <Bold>Weak Events are Dangerous!</Bold> <LineBreak/><LineBreak/>
+                        <Span>This application demonstrates how events based on weak references can cause unexpected results.</Span><LineBreak/>
+                        <Span>As an implementation for the weak event pattern we use the messaging plug-in for MvvMCross:</Span><LineBreak/>
+                        <Span>NuGet: MvvmCross.HotTuna.Plugin.Messenger, version 3.5.1.</Span><LineBreak/><LineBreak/>
+                        <Bold>Page</Bold> 1 will subscribe to and unsubscribe from a timer message.<LineBreak/><LineBreak/>
+                        <Bold>Page 2</Bold> will subscribe to the timer message but will not explicitly unsubscribe from it. It will rely on the weak event
+                        ability to allow subscribers to be garbage collected even if they did not unsubscribe.
+                        This illustrates the advantages of using weak events in that they prevent memory leaks that would occur if classic events were used. 
+                        However, another aspect of this process illustrates the dangers of using weak events. The subscribers will continue to be invoked
+                        each time the event is raised (more precisely when the message is published) even if the subscribers got 
+                        in a garbage collectable state (a.k.a zombie state).<LineBreak/><LineBreak/>
+                        <Span>To demonstrate, go to Page 2, wait a few seconds and then return to the main page. At this point Page 2 will 
+                        be garbage collectable and yet will continue to handle the timer message. Going to Page 2 and returning again
+                        will add another zombie instance of type Page2View into the mix. 
+                        You can prove that these instances of type Page2View are indeed garbage collectable by clicking the "Force a garbage collection" button. 
+                        After the garbage collection runs, you will no longer see Page2View instances handling the timer message proving that those 
+                        instances were indeed garbage collectable.</Span><LineBreak/><LineBreak/>
+                        <Span>Note: In the case of a garbage collectable subscriber, the weak event 
+                        implementation will resurrect it, invoke it and then let it become garbage collectable again.</Span>
+                    </TextBlock>
+                </ScrollViewer>
             </Grid>
 
             <userControls:LoggerViewerControl Grid.Column="1" />

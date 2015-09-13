@@ -11,10 +11,7 @@ namespace WeakEvents.Views
     /// </summary>
     public sealed partial class MainView : MvxWindowsPage
     {
-        private readonly IMvxMessenger messenger;
         private readonly LoggerService logger;
-
-        private MvxSubscriptionToken timerMessageToken;
 
         public MainView()
         {
@@ -23,25 +20,17 @@ namespace WeakEvents.Views
             this.Loaded += OnMainViewLoaded;
             this.Unloaded += OnMainViewUnloaded;
 
-            messenger = Mvx.Resolve<IMvxMessenger>();
             logger = Mvx.Resolve<LoggerService>();
         }
 
         void OnMainViewLoaded(object sender, RoutedEventArgs e)
         {
             logger.LogInfo("MainView: OnMainViewLoaded.");
-            timerMessageToken = messenger.SubscribeOnMainThread<TimerMessage>(OnTimerMessage);
         }
 
         void OnMainViewUnloaded(object sender, RoutedEventArgs e)
         {
             logger.LogInfo("MainView: OnMainViewUnloaded.");
-            messenger.Unsubscribe<TimerMessage>(timerMessageToken);
-        }
-
-        private void OnTimerMessage(TimerMessage timerMessage)
-        {
-            logger.LogInfo("MainView: OnTimerMessage: {0}.", timerMessage);
         }
     }
 }
