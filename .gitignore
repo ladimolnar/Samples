@@ -4,3 +4,6 @@ Sources/AsyncIssue/WindowsUniversalApp/bin/
 Sources/AsyncIssue/WindowsUniversalApp/obj/
 Sources/DisplayInformation/DisplayInformation/obj/
 Sources/DisplayInformation/DisplayInformation/bin/
+Sources/WeakEvents/packages/
+Sources/WeakEvents/WeakEvents/bin/
+Sources/WeakEvents/WeakEvents/obj/

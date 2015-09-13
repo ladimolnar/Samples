@@ -1,0 +1,56 @@
+﻿<UserControl
+    x:Class="WeakEvents.UserControls.LoggerViewerControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid Background="Black">
+
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock 
+                    Grid.Column="0" 
+                    Text="Log entries:" 
+                    FontSize="30" VerticalAlignment="Bottom" />
+
+                <Button 
+                    Grid.Column="1" 
+                    Content="&#xE16D;"
+                    Command="{Binding CopyCommand}"
+                    Style="{StaticResource GlyphButtonstyle}" />
+
+                <Button 
+                    Grid.Column="2" 
+                    Content="&#xE0D9;" 
+                    Command="{Binding ClearCommand}"
+                    Style="{StaticResource GlyphButtonstyle}" />
+            </Grid>
+
+            <ScrollViewer Grid.Row="1" Margin="0,10">
+                <ItemsControl ItemsSource="{Binding Logger.LogMessages}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" FontSize="15" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</UserControl>
