@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakEvents", "WeakEvents\WeakEvents.csproj", "{59B494B2-0B86-452B-B632-C46C08963C3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59B494B2-0B86-452B-B632-C46C08963C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B494B2-0B86-452B-B632-C46C08963C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B494B2-0B86-452B-B632-C46C08963C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B494B2-0B86-452B-B632-C46C08963C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
