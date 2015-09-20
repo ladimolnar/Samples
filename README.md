@@ -9,4 +9,4 @@ The scenario is being discussed on stackoverflow [here](https://stackoverflow.co
 A project for Win 10 that shows the values stored in class DisplayInformation for the current window. Used to demonstrate the scaling applied by the OS and the concept of effective vs. physical pixels.
 
 **Samples\Sources\WeakEvents**  
-A project that demonstrates the dangers of using the "Weak Event"pattern. The issue is discussed on my article [The Weak Event Pattern is Dangerous](http://ladimolnar.com/2015/09/14/the-weak-event-pattern-is-dangerous/)
+A project that demonstrates the dangers of using the "Weak Event"pattern. The issue is discussed in my article [The Weak Event Pattern is Dangerous](http://ladimolnar.com/2015/09/14/the-weak-event-pattern-is-dangerous/)
