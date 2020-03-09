@@ -10,3 +10,6 @@ A project for Win 10 that shows the values stored in class DisplayInformation fo
 
 **Samples\Sources\WeakEvents**  
 A project that demonstrates the dangers of using the "Weak Event"pattern. The issue is discussed in my article [The Weak Event Pattern is Dangerous](http://ladimolnar.com/2015/09/14/the-weak-event-pattern-is-dangerous/).
+
+**Samples\Sources\CSharp\NewInCSharp6**  
+Sample code illustrating what is new in C# 6. [GitHub gist](https://gist.github.com/ladimolnar/d982ae6deb80c78b47496b182d84c3a2)
