@@ -20,7 +20,8 @@ namespace NewInCSharp7.Tuples
             (string name, int age, DateTime dateOfBirth) = GetInfo();
             Debug.WriteLine(name);
 
-            // Tuples support == and != since C# 7.3. See [here](https://docs.microsoft.com/en-us/dotnet/csharp/tuples#equality-and-tuples)
+            // Since C# 7.3 Tuples have support for == and !=
+            // See https://docs.microsoft.com/en-us/dotnet/csharp/tuples#equality-and-tuples
             var p1 = GetInfo();
             var p2 = GetInfo();
             Debug.WriteLine(p1 == p2);
